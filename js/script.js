@@ -45,7 +45,7 @@ function checkEligibility() {
   } else if (age > 95) {
     result.textContent = "Eligible: Age over 95.";
   } else if (age >= 12 && age <= 21) {
-    result.textContent = "Eligible: Student age group (12 to 21).";
+    result.textContent = "Eligible: Student age group (12 between 21).";
   } else if ((age < 12 || age > 21) && !discountDays.includes(day)) {
     result.textContent = "Not eligible: Not a student and it's not a discount day.";
   } else if ((age < 12 || age > 21) && discountDays.includes(day)) {
